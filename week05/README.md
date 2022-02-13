@@ -43,6 +43,15 @@ Week04 作业
 2）使用事务，PrepareStatement 方式，批处理方式，改进上述操作。
 3）配置 Hikari 连接池，改进上述操作。提交代码到 GitHub。
 
+### 实现说明
+
+- 实现代码：https://github.com/lw1243925457/JAVA-000/tree/main/Week_05/code/src/main/java/com/example/code/database/
+  - jdbc：放置原生jdbc操作和事务操作
+  - Hikari：放置Hikari简单示例
+- 测试代码：
+  - jdbc:运行main函数即可
+  - Hikari 运行其中的：HikariApplication，设置为启动以后自动连接查询
+  - 
 附加题（可以后面上完数据库的课再考虑做）：
 (挑战) 基于 AOP 和自定义注解，实现 @MyCache(60) 对于指定方法返回值缓存 60 秒。
 (挑战) 自定义实现一个数据库连接池，并整合 Hibernate/Mybatis/Spring/SpringBoot。

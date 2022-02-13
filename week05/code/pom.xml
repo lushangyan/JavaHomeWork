@@ -7,7 +7,14 @@
     <groupId>io.lushangyan</groupId>
     <artifactId>week05</artifactId>
     <version>1.0</version>
-    
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <properties>
 <!--        <spring-version>5.2.7.RELEASE</spring-version>-->
         <spring-version>4.3.29.RELEASE</spring-version>
@@ -175,6 +182,29 @@
 <!--            <version>5.2.7.RELEASE</version>-->
 <!--        </dependency>-->
 
+
+        <dependency>
+            <groupId>lsy.school.start</groupId>
+            <artifactId>school-start</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+        </dependency>
 
     </dependencies>
 
