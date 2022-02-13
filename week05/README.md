@@ -7,16 +7,16 @@ Week04 作业
 
 2.（必做）写代码实现 Spring Bean 的装配，方式越多越好（XML、Annotation 都可以）, 提交到 GitHub。
 - 1.自动注解方式：
-    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/src/main/java/beanwork/auto
-    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/src/main/java/dong/Main.java
+    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/beanwork/auto
+    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/code/src/main/java/dong/Main.java
 
 - 2.Java代码方式：
-    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/src/main/java/beanwork/javacode
-    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/src/test/java/MyJavaCodeExampleTest.java
+    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/beanwork/javacode
+    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/code/src/test/java/MyJavaCodeExampleTest.java
 
 - 2.Xml配置方式：
-    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/src/main/java/beanwork/xml
-    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/src/test/java/XmlExampleTest.java
+    - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/beanwork/xml
+    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/code/src/test/java/XmlExampleTest.java
 
 
 3.（选做）实现一个 Spring XML 自定义配置，配置一组 Bean，例如：Student/Klass/School。
@@ -45,7 +45,7 @@ Week04 作业
 
 ### 实现说明
 
-- 实现代码：https://github.com/lw1243925457/JAVA-000/tree/main/Week_05/code/src/main/java/com/example/code/database/
+- 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/database
   - jdbc：放置原生jdbc操作和事务操作
   - Hikari：放置Hikari简单示例
 - 测试代码：
