@@ -32,6 +32,8 @@ Week04 作业
 6.（选做）maven/spring 的 profile 机制，都有什么用法？
 7.（选做）总结 Hibernate 与 MyBatis 的各方面异同点。
 8.（必做）给前面课程提供的 Student/Klass/School 实现自动配置和 Starter。
+- 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/schoolStart
+- 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/schoolStart/src/test/java/com/starter/MySchoolTest.java
 
 
 
