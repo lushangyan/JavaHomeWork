@@ -46,4 +46,7 @@ public class User {
     public void setMoney(Long money) {
         this.money = money;
     }
+
+
+
 }

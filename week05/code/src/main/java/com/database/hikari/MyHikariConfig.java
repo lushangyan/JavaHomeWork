@@ -1,4 +1,3 @@
-/*
 package com.database.hikari;
 
 import com.zaxxer.hikari.HikariConfig;
@@ -19,4 +18,3 @@ public class MyHikariConfig {
         return dataSource;
     }
 }
-*/

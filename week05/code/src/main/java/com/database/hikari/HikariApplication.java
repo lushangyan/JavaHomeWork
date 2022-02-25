@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "com.example.code.database.hikari")
+@ComponentScan(basePackages = "com.database.hikari")
 public class HikariApplication {
 
     public static void main(String[] args) {

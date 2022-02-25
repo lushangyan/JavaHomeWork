@@ -26,7 +26,7 @@ public class MysqlJdbc {
         }
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mall", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://mysql-test.banggood.cn:3306/lushangyan_test", "root", "123456");
             if (connection != null) {
                 System.out.println("Connection successful!");
             } else {
@@ -57,8 +57,7 @@ public class MysqlJdbc {
     }
 
     private String buildInsertSqlTemplate(String table, String column, int valueAmount) {
-        return "insert into " + table + " " + column + " values (?" +
-                ",?" + StringUtils.repeat(",?",Math.max(0, valueAmount - 1)) +
+        return "insert into " + table + " " + column + " values (?"  + StringUtils.repeat(",?",Math.max(0, valueAmount - 1)) +
                 ")";
     }
 
