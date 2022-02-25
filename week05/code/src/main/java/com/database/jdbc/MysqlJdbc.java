@@ -1,4 +1,6 @@
-package database.jdbc;
+package com.database.jdbc;
+
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.*;
 import java.util.*;
@@ -56,7 +58,7 @@ public class MysqlJdbc {
 
     private String buildInsertSqlTemplate(String table, String column, int valueAmount) {
         return "insert into " + table + " " + column + " values (?" +
-                ",?".repeat(Math.max(0, valueAmount - 1)) +
+                ",?" + StringUtils.repeat(",?",Math.max(0, valueAmount - 1)) +
                 ")";
     }
 

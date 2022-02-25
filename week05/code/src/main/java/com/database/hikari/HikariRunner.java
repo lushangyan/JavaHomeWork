@@ -1,4 +1,5 @@
-package database.hikari;
+/*
+package com.database.hikari;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,3 +22,4 @@ public class HikariRunner implements CommandLineRunner {
         users.stream().forEach(System.out::println);
     }
 }
+*/

@@ -1,14 +1,13 @@
-import beanwork.auto.AutoBean;
-import com.starter.MySchool;
+import com.beanwork.auto.AutoBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 
-//@ContextConfiguration(classes = AutoBean.class)
-@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = AutoBean.class)
 public class AutoBeanTest {
 
     @Autowired
@@ -20,14 +19,6 @@ public class AutoBeanTest {
     }
 
 
-    @Autowired
-    MySchool mySchool;
-
-    @Test
-    public void test22() {
-        System.out.println(123);
-        System.out.println(mySchool.toString());
-    }
 
 
 

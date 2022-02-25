@@ -1,4 +1,4 @@
-package database.hikari;
+package com.database.hikari;
 
 public class User {
     private Long id;

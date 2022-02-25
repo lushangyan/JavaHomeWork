@@ -1,4 +1,4 @@
-package dong;
+package com.dong;
 
 public class ManSayHelloWorld implements ISayHelloWorld{
     @Override

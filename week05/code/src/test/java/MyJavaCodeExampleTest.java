@@ -1,5 +1,5 @@
-import beanwork.javacode.MyJavaCodeConfig;
-import beanwork.javacode.MyJavaCodeExample;
+import com.beanwork.javacode.MyJavaCodeConfig;
+import com.beanwork.javacode.MyJavaCodeExample;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

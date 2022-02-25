@@ -1,4 +1,4 @@
-import beanwork.xml.XmlExample;
+import com.beanwork.xml.XmlExample;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

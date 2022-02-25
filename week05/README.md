@@ -8,7 +8,7 @@ Week04 作业
 2.（必做）写代码实现 Spring Bean 的装配，方式越多越好（XML、Annotation 都可以）, 提交到 GitHub。
 - 1.自动注解方式：
     - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/beanwork/auto
-    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/code/src/main/java/dong/Main.java
+    - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/code/src/test/java/AutoBeanTest.java
 
 - 2.Java代码方式：
     - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/code/src/main/java/beanwork/javacode
@@ -34,8 +34,6 @@ Week04 作业
 8.（必做）给前面课程提供的 Student/Klass/School 实现自动配置和 Starter。
 - 实现代码：https://github.com/lushangyan/JavaHomeWork/tree/main/week05/schoolStart
 - 测试代码：https://github.com/lushangyan/JavaHomeWork/blob/main/week05/schoolStart/src/test/java/com/starter/MySchoolTest.java
-
-
 
 9.（选做）学习 MyBatis-generator 的用法和原理，学会自定义 TypeHandler 处理复杂类型。
 10.（必做）研究一下 JDBC 接口和数据库连接池，掌握它们的设计和用法：

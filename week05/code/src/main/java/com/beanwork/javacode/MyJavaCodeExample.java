@@ -1,4 +1,4 @@
-package beanwork.javacode;
+package com.beanwork.javacode;
 
 import org.springframework.stereotype.Component;
 

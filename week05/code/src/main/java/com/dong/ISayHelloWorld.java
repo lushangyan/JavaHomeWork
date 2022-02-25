@@ -1,4 +1,4 @@
-package dong;
+package com.dong;
 
 public interface ISayHelloWorld {
 

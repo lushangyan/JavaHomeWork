@@ -1,13 +1,13 @@
-package beanwork.xml;
+package com.beanwork.auto;
 
 import org.springframework.stereotype.Component;
 
 /**
- * xml方式，Bean装配
+ * 自动注解方式，Bean装配
  */
 @Component
-public class XmlExample {
-    public XmlExample() {
+public class AutoBean {
+    public AutoBean() {
         System.out.println("Construct Example");
     }
 
