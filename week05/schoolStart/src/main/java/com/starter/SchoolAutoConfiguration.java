@@ -17,7 +17,8 @@ import java.util.Map;
 @ConditionalOnClass(MySchool.class)
 @EnableConfigurationProperties(SchoolProperties.class)
 @ConditionalOnProperty(prefix = "school", value = "enabled", havingValue = "true")
-@PropertySource("classpath:application.properties")
+//默认就是读取classpath:application.properties  不需要单独注入默认配置文件
+//@PropertySource("classpath:application.properties")
 public class SchoolAutoConfiguration {
 
     @Autowired
