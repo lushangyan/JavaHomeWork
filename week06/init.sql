@@ -13,23 +13,42 @@ create table good
 )
     comment '商品表';
 
-create table `order`
+create table `orders`
 (
     id          int auto_increment
         primary key,
-    order_no    mediumtext   null comment '订单号',
+    order_no    varchar(255)   null comment '订单号',
     shop_id     int          null,
-    user_name   int          null comment '用户名',
+    user_id     int          not null,
+    user_name   varchar(255) null comment '用户名',
     address     varchar(255) null comment '住址',
-    phone       int          null comment '电话',
+    phone       varchar(15)  null comment '电话',
     status      int          null comment '物流状态,0未发货1已发货2已签收3客服处理4退款',
     good_id     int          not null comment '商品id',
     good_name   varchar(255) null comment '商品名称',
     order_time  datetime     null comment '下单时间',
-    update_time datetime     null comment '修改时间',
-    user_id     int          not null
+    update_time datetime     null comment '修改时间'
+
 )
     comment '订单主表';
+create index idx_good_id
+    on orders (good_id);
+
+create index idx_order_time
+    on orders (order_time);
+
+create index idx_phone
+    on orders (phone);
+
+create index idx_shop_id
+    on orders (shop_id);
+
+create index idx_update_time
+    on orders (update_time);
+
+create index idx_user_id
+    on orders (user_id);
+
 
 create table shop
 (
