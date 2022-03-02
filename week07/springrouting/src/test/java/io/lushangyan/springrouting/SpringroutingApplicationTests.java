@@ -15,10 +15,11 @@ class SpringroutingApplicationTests {
 
 
     /**
-     * 动态 切换数据源版本 1.0 进行测试
-     * 测试时会打印当前使用的数据库名称，用这个来判断是否切换成功
-     * insert插入 走默认数据源主库db0
-     * find查询 根据注解指定，走从库db1
+     * 读写分离 - 动态切换数据源版本 1.0
+     * 配置数据库主从复制 db0主库 db1从库
+     * 测试时会输出当前使用的数据库名称，用这个来判断是否切换成功
+     * insert插入 默认走主库
+     * find查询   使用注解指定切换从库
      */
     @Test
     void inserOrder() {
@@ -31,18 +32,9 @@ class SpringroutingApplicationTests {
             System.out.println(i1);
         }
 
-        //插入使用注解指定从库插入
-        for (int i = 10; i < 21; i++) {
-            Orders orders = new Orders();
-            orders.setId(i);
-            orders.setUserId(i);
-            int i1 = ordersService.insertAnnotation(orders);
-            System.out.println(i1);
-        }
-
-        //查询 根据注解指定，走从库db1
-        Orders byId = ordersService.findUserByAnnotation(10);
-        System.out.println(JSON.toJSONString(byId));
+        //查询 指定走从库db1
+        Orders byId2 = ordersService.findUserByAnnotation(1);
+        System.out.println(JSON.toJSONString(byId2));
     }
 
 
