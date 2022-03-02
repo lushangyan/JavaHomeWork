@@ -19,7 +19,7 @@ class SpringroutingApplicationTests {
      * 配置数据库主从复制 db0主库 db1从库
      * 测试时会输出当前使用的数据库名称，用这个来判断是否切换成功
      * insert插入 默认走主库
-     * find查询   使用注解指定切换从库
+     * find查询   使用注解切换从库
      */
     @Test
     void inserOrder() {
@@ -32,7 +32,7 @@ class SpringroutingApplicationTests {
             System.out.println(i1);
         }
 
-        //查询 指定走从库db1
+        //查询 使用注解切换从库
         Orders byId2 = ordersService.findUserByAnnotation(1);
         System.out.println(JSON.toJSONString(byId2));
     }
