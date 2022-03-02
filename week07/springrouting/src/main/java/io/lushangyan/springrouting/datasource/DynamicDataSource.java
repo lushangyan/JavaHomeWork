@@ -1,5 +1,6 @@
 package io.lushangyan.springrouting.datasource;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 import javax.sql.DataSource;
@@ -43,7 +44,10 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     }
 
     public static String getDataSource() {
-        return CONTEXT_HOLDER.get();
+        String dataSourceStr = CONTEXT_HOLDER.get();
+        dataSourceStr = StringUtils.isEmpty(dataSourceStr) ?"db0":dataSourceStr;
+        System.out.println("currentDataSource:" + dataSourceStr);
+        return dataSourceStr;
     }
 
     public static void clearDataSource() {

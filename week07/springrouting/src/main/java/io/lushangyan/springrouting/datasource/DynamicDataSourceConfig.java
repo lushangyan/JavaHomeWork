@@ -25,15 +25,12 @@ public class DynamicDataSourceConfig {
     Environment env;
 
     @Bean
-    @ConfigurationProperties("spring.datasource.hikari.db0")
     public DataSource db0DataSource(){
-
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getProperty("spring.datasource.driverClassName"));
         dataSource.setUrl(env.getProperty("spring.datasource.hikari.db0.jdbcUrl"));
         dataSource.setUsername(env.getProperty("spring.datasource.hikari.db0.username"));
         dataSource.setPassword(env.getProperty("spring.datasource.hikari.db0.password"));
-
         return dataSource;
 
     }
@@ -41,17 +38,13 @@ public class DynamicDataSourceConfig {
 
 
     @Bean
-    @ConfigurationProperties("spring.datasource.hikari.db1")
     public DataSource db1DataSource(){
-
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getProperty("spring.datasource.driverClassName"));
         dataSource.setUrl(env.getProperty("spring.datasource.hikari.db1.jdbcUrl"));
         dataSource.setUsername(env.getProperty("spring.datasource.hikari.db1.username"));
         dataSource.setPassword(env.getProperty("spring.datasource.hikari.db1.password"));
-
         return dataSource;
-
     }
 
 

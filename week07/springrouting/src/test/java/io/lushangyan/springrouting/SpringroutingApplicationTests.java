@@ -24,6 +24,7 @@ class SpringroutingApplicationTests {
     @Test
     void inserOrder() {
         //插入默认走主库db0
+        System.out.println("插入开始");
         for (int i = 1; i < 11; i++) {
             Orders orders = new Orders();
             orders.setId(i);
@@ -31,7 +32,9 @@ class SpringroutingApplicationTests {
             int i1 = ordersService.insert(orders);
             System.out.println(i1);
         }
+        System.out.println("插入结束");
 
+        System.out.println("查询开始");
         //查询 使用注解切换从库
         Orders byId2 = ordersService.findUserByAnnotation(1);
         System.out.println(JSON.toJSONString(byId2));
