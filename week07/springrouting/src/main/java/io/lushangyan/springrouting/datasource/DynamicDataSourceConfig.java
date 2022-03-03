@@ -3,6 +3,7 @@ package io.lushangyan.springrouting.datasource;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -25,26 +26,32 @@ public class DynamicDataSourceConfig {
     Environment env;
 
     @Bean
+    @ConfigurationProperties("spring.datasource.hikari.db0")
     public DataSource db0DataSource(){
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("spring.datasource.driverClassName"));
-        dataSource.setUrl(env.getProperty("spring.datasource.hikari.db0.jdbcUrl"));
-        dataSource.setUsername(env.getProperty("spring.datasource.hikari.db0.username"));
-        dataSource.setPassword(env.getProperty("spring.datasource.hikari.db0.password"));
-        return dataSource;
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName(env.getProperty("spring.datasource.hikari.db0.driverClassName"));
+//        dataSource.setUrl(env.getProperty("spring.datasource.hikari.db0.jdbcUrl"));
+//        dataSource.setUsername(env.getProperty("spring.datasource.hikari.db0.username"));
+//        dataSource.setPassword(env.getProperty("spring.datasource.hikari.db0.password"));
+        DataSource build = DataSourceBuilder.create().build();
+        return build;
 
     }
 
 
 
     @Bean
+    @ConfigurationProperties("spring.datasource.hikari.db1")
     public DataSource db1DataSource(){
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("spring.datasource.driverClassName"));
-        dataSource.setUrl(env.getProperty("spring.datasource.hikari.db1.jdbcUrl"));
-        dataSource.setUsername(env.getProperty("spring.datasource.hikari.db1.username"));
-        dataSource.setPassword(env.getProperty("spring.datasource.hikari.db1.password"));
-        return dataSource;
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName(env.getProperty("spring.datasource.hikari.db1.driverClassName"));
+//        dataSource.setUrl(env.getProperty("spring.datasource.hikari.db1.jdbcUrl"));
+//        dataSource.setUsername(env.getProperty("spring.datasource.hikari.db1.username"));
+//        dataSource.setPassword(env.getProperty("spring.datasource.hikari.db1.password"));
+//        return dataSource;
+        DataSource build = DataSourceBuilder.create().build();
+        return build;
+
     }
 
 

@@ -12,9 +12,9 @@ import io.lushangyan.springrouting.entity.Orders;
  */
 public interface OrdersService extends IService<Orders> {
 
-    Orders findUser(int id);
+    Orders findOrder(int id);
 
-    Orders findUserByAnnotation(int id);
+    Orders findOrderAnnotation(int id);
 
     int insert(Orders orders);
 

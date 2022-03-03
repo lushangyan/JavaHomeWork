@@ -1,12 +1,18 @@
 package io.lushangyan.springrouting;
 
 import com.alibaba.fastjson.JSON;
+import io.lushangyan.springrouting.datasource.CurDataSource;
+import io.lushangyan.springrouting.datasource.DataSourceNames;
 import io.lushangyan.springrouting.entity.Orders;
 import io.lushangyan.springrouting.service.OrdersService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.security.RunAs;
+
+//@RunWith(SpringRunner.class)
 @SpringBootTest
 class SpringroutingApplicationTests {
 
@@ -21,22 +27,22 @@ class SpringroutingApplicationTests {
      * insert插入 默认走主库
      * find查询   使用注解切换从库
      */
+
+
     @Test
-    void inserOrder() {
+    void mytest() {
         //插入默认走主库db0
         System.out.println("插入开始");
-        for (int i = 1; i < 11; i++) {
-            Orders orders = new Orders();
-            orders.setId(i);
-            orders.setUserId(1);
-            int i1 = ordersService.insert(orders);
-            System.out.println(i1);
-        }
+        Orders orders = new Orders();
+        orders.setId(80);
+        orders.setUserId(70);
+        int i1 = ordersService.insert(orders);
+        System.out.println(i1);
         System.out.println("插入结束");
 
         System.out.println("查询开始");
         //查询 使用注解切换从库
-        Orders byId2 = ordersService.findUserByAnnotation(1);
+        Orders byId2 = ordersService.findOrderAnnotation(1);
         System.out.println(JSON.toJSONString(byId2));
     }
 

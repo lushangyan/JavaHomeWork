@@ -2,4 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="io.lushangyan.springrouting.mapper.OrdersMapper">
 
+    <select id="findOrder" resultType="io.lushangyan.springrouting.entity.Orders">
+        select * from orders where id = #{id}
+    </select>
+
+    <select id="findOrderAnnotation" resultType="io.lushangyan.springrouting.entity.Orders">
+        select * from orders where id = #{id}
+    </select>
+
+    <insert id="insertOrder">
+        insert into orders(id,user_id) values(#{orders.id},#{orders.userId})
+    </insert>
+
+    <insert id="insertOrderAnnotation">
+        insert into orders(id,user_id) values(#{orders.id},#{orders.userId})
+    </insert>
+
+
+
 </mapper>

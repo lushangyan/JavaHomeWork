@@ -1,11 +1,10 @@
 package io.lushangyan.springrouting.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.lushangyan.springrouting.datasource.CurDataSource;
-import io.lushangyan.springrouting.datasource.DataSourceNames;
 import io.lushangyan.springrouting.entity.Orders;
 import io.lushangyan.springrouting.mapper.OrdersMapper;
 import io.lushangyan.springrouting.service.OrdersService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,27 +18,27 @@ import org.springframework.stereotype.Service;
 public class OrdersServiceImpl extends ServiceImpl<OrdersMapper, Orders> implements OrdersService {
 
 
+    @Autowired
+    private OrdersMapper ordersMapper;
 
     @Override
     public int insert(Orders orders) {
-        return this.baseMapper.insert(orders);
+        return ordersMapper.insertOrder(orders);
     }
 
-    @CurDataSource(name = DataSourceNames.DB1)
     @Override
     public int insertAnnotation(Orders orders) {
-        return this.baseMapper.insert(orders);
+        return ordersMapper.insertOrderAnnotation(orders);
     }
 
     @Override
-    public Orders findUser(int id) {
-        return this.baseMapper.selectById(id);
+    public Orders findOrder(int id) {
+        return ordersMapper.findOrder(id);
     }
 
-    @CurDataSource(name = DataSourceNames.DB1)
     @Override
-    public Orders findUserByAnnotation(int id) {
-        return this.baseMapper.selectById(id);
+    public Orders findOrderAnnotation(int id) {
+        return ordersMapper.findOrderAnnotation(id);
     }
 
 

@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("io.lushangyan.springrouting.mapper")
+@MapperScan("io.lushangyan.springrouting.mappe.*")
 @SpringBootApplication
 public class SpringroutingApplication {
 
