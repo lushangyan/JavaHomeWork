@@ -34,7 +34,7 @@ class SpringroutingApplicationTests {
         //插入默认走主库db0
         System.out.println("插入开始");
         Orders orders = new Orders();
-        orders.setId(80);
+        orders.setId(90);
         orders.setUserId(70);
         int i1 = ordersService.insert(orders);
         System.out.println(i1);
