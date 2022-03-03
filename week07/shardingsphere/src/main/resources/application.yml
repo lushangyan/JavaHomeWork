@@ -1,0 +1,32 @@
+spring:
+  shardingsphere:
+    props:
+      sql:
+        show:
+          true
+    datasource:
+      names: db0,db1
+      db0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/db0
+        username: root
+        password:
+      db1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/db1
+        username: root
+        password:
+    sharding:
+      defaultDatabaseStrategy:
+        hint:
+          algorithmClassName: com.lushangyan.shardingsphere.MyDatasourceRoutingAlgorithm
+      tables:
+        orders:
+          actualDataNodes: db0.orders
+        shop:
+          actualDataNodes: db1.shop
+      defaultTableStrategy:
+        none:
+          any: ""
