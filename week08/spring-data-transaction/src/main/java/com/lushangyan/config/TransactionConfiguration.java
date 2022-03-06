@@ -24,14 +24,14 @@ public class TransactionConfiguration {
         return new DataSourceTransactionManager(dataSource);
     }
     
-    /**
-     * Create JDBC template bean.
-     *
-     * @param dataSource data source
-     * @return JDBC template bean
-     */
-    @Bean
-    public JdbcTemplate jdbcTemplate(final DataSource dataSource) {
-        return new JdbcTemplate(dataSource);
-    }
+//    /**
+//     * Create JDBC template bean.
+//     *
+//     * @param dataSource data source
+//     * @return JDBC template bean
+//     */
+//    @Bean
+//    public JdbcTemplate jdbcTemplate(final DataSource dataSource) {
+//        return new JdbcTemplate(dataSource);
+//    }
 }
