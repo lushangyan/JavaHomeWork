@@ -1,8 +1,8 @@
-CREATE SCHEMA IF NOT EXISTS `db_1` DEFAULT CHARACTER SET utf8mb4 ;
-USE `db_1` ;
+CREATE SCHEMA IF NOT EXISTS `db-1` DEFAULT CHARACTER SET utf8mb4 ;
+USE `db-1` ;
 
-DROP TABLE IF EXISTS `db_1`.`orders_1` ;
-create table IF NOT EXISTS `db_1`.`orders_1`
+DROP TABLE IF EXISTS `db-1`.`orders_1` ;
+create table IF NOT EXISTS `db-1`.`orders_1`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -19,8 +19,8 @@ create table IF NOT EXISTS `db_1`.`orders_1`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_3` ;
-create table IF NOT EXISTS `db_1`.`orders_3`
+DROP TABLE IF EXISTS `db-1`.`orders_3` ;
+create table IF NOT EXISTS `db-1`.`orders_3`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -37,8 +37,8 @@ create table IF NOT EXISTS `db_1`.`orders_3`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_5` ;
-create table IF NOT EXISTS `db_1`.`orders_5`
+DROP TABLE IF EXISTS `db-1`.`orders_5` ;
+create table IF NOT EXISTS `db-1`.`orders_5`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -55,8 +55,8 @@ create table IF NOT EXISTS `db_1`.`orders_5`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_7` ;
-create table IF NOT EXISTS `db_1`.`orders_7`
+DROP TABLE IF EXISTS `db-1`.`orders_7` ;
+create table IF NOT EXISTS `db-1`.`orders_7`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -73,8 +73,8 @@ create table IF NOT EXISTS `db_1`.`orders_7`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_9` ;
-create table IF NOT EXISTS `db_1`.`orders_9`
+DROP TABLE IF EXISTS `db-1`.`orders_9` ;
+create table IF NOT EXISTS `db-1`.`orders_9`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -91,8 +91,8 @@ create table IF NOT EXISTS `db_1`.`orders_9`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_11` ;
-create table IF NOT EXISTS `db_1`.`orders_11`
+DROP TABLE IF EXISTS `db-1`.`orders_11` ;
+create table IF NOT EXISTS `db-1`.`orders_11`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -109,8 +109,8 @@ create table IF NOT EXISTS `db_1`.`orders_11`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_13` ;
-create table IF NOT EXISTS `db_1`.`orders_13`
+DROP TABLE IF EXISTS `db-1`.`orders_13` ;
+create table IF NOT EXISTS `db-1`.`orders_13`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -127,8 +127,8 @@ create table IF NOT EXISTS `db_1`.`orders_13`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_15` ;
-create table IF NOT EXISTS `db_1`.`orders_15`
+DROP TABLE IF EXISTS `db-1`.`orders_15` ;
+create table IF NOT EXISTS `db-1`.`orders_15`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -145,8 +145,8 @@ create table IF NOT EXISTS `db_1`.`orders_15`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_17` ;
-create table IF NOT EXISTS `db_1`.`orders_17`
+DROP TABLE IF EXISTS `db-1`.`orders_17` ;
+create table IF NOT EXISTS `db-1`.`orders_17`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -163,8 +163,8 @@ create table IF NOT EXISTS `db_1`.`orders_17`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_19` ;
-create table IF NOT EXISTS `db_1`.`orders_19`
+DROP TABLE IF EXISTS `db-1`.`orders_19` ;
+create table IF NOT EXISTS `db-1`.`orders_19`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -181,8 +181,8 @@ create table IF NOT EXISTS `db_1`.`orders_19`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_21` ;
-create table IF NOT EXISTS `db_1`.`orders_21`
+DROP TABLE IF EXISTS `db-1`.`orders_21` ;
+create table IF NOT EXISTS `db-1`.`orders_21`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -199,8 +199,8 @@ create table IF NOT EXISTS `db_1`.`orders_21`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_23` ;
-create table IF NOT EXISTS `db_1`.`orders_23`
+DROP TABLE IF EXISTS `db-1`.`orders_23` ;
+create table IF NOT EXISTS `db-1`.`orders_23`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -217,8 +217,8 @@ create table IF NOT EXISTS `db_1`.`orders_23`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_25` ;
-create table IF NOT EXISTS `db_1`.`orders_25`
+DROP TABLE IF EXISTS `db-1`.`orders_25` ;
+create table IF NOT EXISTS `db-1`.`orders_25`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -235,8 +235,8 @@ create table IF NOT EXISTS `db_1`.`orders_25`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_27` ;
-create table IF NOT EXISTS `db_1`.`orders_27`
+DROP TABLE IF EXISTS `db-1`.`orders_27` ;
+create table IF NOT EXISTS `db-1`.`orders_27`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -253,8 +253,8 @@ create table IF NOT EXISTS `db_1`.`orders_27`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_29` ;
-create table IF NOT EXISTS `db_1`.`orders_29`
+DROP TABLE IF EXISTS `db-1`.`orders_29` ;
+create table IF NOT EXISTS `db-1`.`orders_29`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
@@ -271,8 +271,8 @@ create table IF NOT EXISTS `db_1`.`orders_29`
     )
     comment '订单主表';
 
-DROP TABLE IF EXISTS `db_1`.`orders_31` ;
-create table IF NOT EXISTS `db_1`.`orders_31`
+DROP TABLE IF EXISTS `db-1`.`orders_31` ;
+create table IF NOT EXISTS `db-1`.`orders_31`
 (
     id          int auto_increment primary key,
     order_no    varchar(255)   null comment '订单号',
