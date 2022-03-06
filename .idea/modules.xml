@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaHomeWork.iml" filepath="$PROJECT_DIR$/JavaHomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week03/nio01/nio01.iml" filepath="$PROJECT_DIR$/week03/nio01/nio01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week03/nio02/nio02.iml" filepath="$PROJECT_DIR$/week03/nio02/nio02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week05/schoolStartTest/schoolStartTest.iml" filepath="$PROJECT_DIR$/week05/schoolStartTest/schoolStartTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week07/springrouting/week07-springrouting.iml" filepath="$PROJECT_DIR$/week07/springrouting/week07-springrouting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week08/spring-data-sharding/week08-spring-data-sharding.iml" filepath="$PROJECT_DIR$/week08/spring-data-sharding/week08-spring-data-sharding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week08/spring-data-transaction/week08-spring-data-transaction.iml" filepath="$PROJECT_DIR$/week08/spring-data-transaction/week08-spring-data-transaction.iml" />
+    </modules>
+  </component>
+</project>
