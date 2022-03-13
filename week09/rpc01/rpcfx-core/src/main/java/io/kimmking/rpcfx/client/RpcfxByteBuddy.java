@@ -82,8 +82,8 @@ public final class RpcfxByteBuddy {
             }
 
             //Netty+HTTP 作为 client 端传输方式
-            //RpcfxResponse response = post(request, url);
-            RpcfxResponse response = nettyPost(request,"localhost",8080);
+            RpcfxResponse response = post(request, url);
+            //RpcfxResponse response = nettyPost(request,"localhost",8080);
 
 
             // 加filter地方之三
