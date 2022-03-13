@@ -19,6 +19,10 @@ import java.io.IOException;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
+
 public class AbstarctRpcfx {
 
     public static final MediaType JSONTYPE = MediaType.get("application/json; charset=utf-8");
@@ -41,34 +45,55 @@ public class AbstarctRpcfx {
 
 
     protected static RpcfxResponse nettyPost(RpcfxRequest req, String host,int port) throws Exception {
-        final RpcfxResponse[] rpcfxResponse = new RpcfxResponse[1];
-        try {
-            NettyHttpClient.execute(host, port, new SimpleChannelInboundHandler<FullHttpResponse>() {
-                @Override
-                public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                    System.out.println("netty req json: "+JSON.toJSONString(req));
 
-                    URI uri = new URI("/");
-                    FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_0,
-                            HttpMethod.POST, uri.toASCIIString(), Unpooled.wrappedBuffer(JSON.toJSONString(req).getBytes(StandardCharsets.UTF_8)));
-                    request.headers().add(HttpHeaderNames.CONNECTION,HttpHeaderValues.KEEP_ALIVE);
-                    request.headers().add(HttpHeaderNames.CONTENT_TYPE,HttpHeaderValues.APPLICATION_JSON);
-                    request.headers().add(HttpHeaderNames.ACCEPT_ENCODING,HttpHeaderValues.GZIP);
-                    request.headers().add(HttpHeaderNames.CONTENT_LENGTH,request.content().readableBytes());
-                    ctx.writeAndFlush(request);
+
+        FutureTask<RpcfxResponse> task = new FutureTask<RpcfxResponse>(new Callable<RpcfxResponse>() {
+            @Override
+            public RpcfxResponse call() throws Exception {
+                final RpcfxResponse[] rpcfxResponse = new RpcfxResponse[1];
+                try {
+                    NettyHttpClient.execute(host, port, new SimpleChannelInboundHandler<FullHttpResponse>() {
+                        @Override
+                        public void channelActive(ChannelHandlerContext ctx) throws Exception {
+                            System.out.println("netty req json: "+JSON.toJSONString(req));
+
+                            URI uri = new URI("/");
+                            FullHttpRequest request = new DefaultFullHttpRequest(HttpVersion.HTTP_1_0,
+                                    HttpMethod.POST, uri.toASCIIString(), Unpooled.wrappedBuffer(JSON.toJSONString(req).getBytes(StandardCharsets.UTF_8)));
+                            request.headers().add(HttpHeaderNames.CONNECTION,HttpHeaderValues.KEEP_ALIVE);
+                            request.headers().add(HttpHeaderNames.CONTENT_TYPE,HttpHeaderValues.APPLICATION_JSON);
+                            request.headers().add(HttpHeaderNames.ACCEPT_ENCODING,HttpHeaderValues.GZIP);
+                            request.headers().add(HttpHeaderNames.CONTENT_LENGTH,request.content().readableBytes());
+                            ctx.writeAndFlush(request);
+                        }
+                        @Override
+                        protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpResponse fullHttpResponse) throws Exception {
+                            ByteBuf buf = fullHttpResponse.content();
+                            String result = buf.toString(CharsetUtil.UTF_8);
+                            System.out.println("netty resp json: "+result);
+                            rpcfxResponse[0] = JSON.parseObject(result, RpcfxResponse.class);
+                        }
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-                @Override
-                protected void channelRead0(ChannelHandlerContext channelHandlerContext, FullHttpResponse fullHttpResponse) throws Exception {
-                    ByteBuf buf = fullHttpResponse.content();
-                    String result = buf.toString(CharsetUtil.UTF_8);
-                    System.out.println("netty resp json: "+result);
-                    rpcfxResponse[0] = JSON.parseObject(result, RpcfxResponse.class);
-                }
-            });
-        } catch (Exception e) {
+                return rpcfxResponse[0];
+            }
+        });
+        Thread thread = new Thread(task);
+        thread.start();
+        thread.setDaemon(true);
+
+        try {
+            System.out.println("result: " + task.get());
+            return task.get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        return rpcfxResponse[0];
+        return null;
+
     }
 
 

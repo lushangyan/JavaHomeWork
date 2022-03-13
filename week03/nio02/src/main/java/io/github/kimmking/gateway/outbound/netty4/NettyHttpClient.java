@@ -1,4 +1,4 @@
-package io.github.kimmking.gateway.outbound;
+package io.github.kimmking.gateway.outbound.netty4;
 
 import io.github.kimmking.gateway.outbound.netty4.NettyHttpClientOutboundHandler;
 import io.netty.bootstrap.Bootstrap;
@@ -47,6 +47,6 @@ public class NettyHttpClient {
 
     public static void main(String[] args) throws Exception {
         NettyHttpClient client = new NettyHttpClient();
-        client.connect("127.0.0.1", 8801);
+        client.connect("127.0.0.1", 8080);
     }
 }

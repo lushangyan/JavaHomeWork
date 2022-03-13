@@ -30,7 +30,6 @@ public class RpcfxClientApplication {
 		//JDK 动态代理实现
 		UserService userService = RpcfxJDKProxy.create(UserService.class, "http://localhost:8080/");
 		User user = userService.findById(1);
-
 		System.out.println("find user id=1 from server: " + user.getName());
 
 		//cglib代理实现
