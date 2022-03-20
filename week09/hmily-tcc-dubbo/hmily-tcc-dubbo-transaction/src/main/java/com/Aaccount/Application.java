@@ -39,6 +39,8 @@ import org.springframework.context.annotation.ImportResource;
 @ImportResource({"classpath:spring-dubbo.xml"})
 public class Application implements CommandLineRunner , ApplicationContextAware {
 
+    //TODO 暂时不知道为什么注入不进来
+    //TODO 还需要了解Hmily对数据库命名的使用
 //    @Autowired
 //    private MyAccountService myAccountService;
     @Autowired
