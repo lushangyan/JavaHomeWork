@@ -14,12 +14,9 @@
  * limitations under the License.
  */
 
-package com.Baccount;
+package com.Aaccount;
 
-import com.Baccount.service.MyAccountService;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,24 +29,17 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ImportResource({"classpath:spring-dubbo.xml"})
-@MapperScan("com.Baccount.mapper")
-public class DubboHmilyAccountApplication implements CommandLineRunner {
+@MapperScan("com.Aaccount.mapper")
+public class MyBApplication {
 
-    @Autowired
-    private MyAccountService myAccountService;
     /**
      * main.
      *
      * @param args args.
      */
     public static void main(final String[] args) {
-        SpringApplication springApplication = new SpringApplication(DubboHmilyAccountApplication.class);
+        SpringApplication springApplication = new SpringApplication(MyBApplication.class);
         springApplication.setWebApplicationType(WebApplicationType.NONE);
         springApplication.run(args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println(1);
     }
 }

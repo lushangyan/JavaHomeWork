@@ -16,9 +16,11 @@
 
 package com.Aaccount;
 
+import com.Aaccount.myservice.MyTestBService;
+
+
+//import com.Aaccount.service.AccountService;
 import com.Aaccount.service.AccountService;
-import com.Baccount.service.MyAccountService;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -37,20 +39,14 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ImportResource({"classpath:spring-dubbo.xml"})
-public class Application implements CommandLineRunner , ApplicationContextAware {
+public class Application implements CommandLineRunner  {
 
-    //TODO 暂时不知道为什么注入不进来
-    //TODO 还需要了解Hmily对数据库命名的使用
-//    @Autowired
-//    private MyAccountService myAccountService;
     @Autowired
     private AccountService accountService;
 
-    private ApplicationContext applicationContext;
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
-    }
+    @Autowired
+    private MyTestBService myTestBService;
+
 
     public static void main(final String[] args) {
         SpringApplication springApplication = new SpringApplication(Application.class);
@@ -61,7 +57,8 @@ public class Application implements CommandLineRunner , ApplicationContextAware 
     public void run(String... args) throws Exception {
         //人民币帐号加钱
         accountService.pay("1",7,0);
-        //myAccountService.pay("2",-7,1);
+        myTestBService.pay("2",7,0);
+        System.out.println(123);
     }
 
 

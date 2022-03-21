@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-package com.Baccount.mapper;
+package com.Aaccount.mapper;
 
-import com.Baccount.entity.AccountDTO;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-
+import com.Aaccount.entity.AccountDTO;
 
 /**
  * The interface Account mapper.
@@ -40,7 +39,7 @@ public interface AccountMapper {
 
     @Update("update account set " +
             " free_cny_balance= free_cny_balance - #{cnyAmount}" +
-            " free_do_balance= free_do_balance - #{doAmount}" +
+//            " free_do_balance= free_do_balance - #{doAmount}" +
             " where user_id =#{userId} ")
     int confirm(String userId,Integer cnyAmount,Integer doAmount);
     
@@ -48,8 +47,8 @@ public interface AccountMapper {
     @Update("update account set "+
             " cny_balance = cny_balance + #{cnyAmount}," +
             " free_cny_balance= free_cny_balance -  #{cnyAmount} " +
-            " do_balance = do_balance + #{doAmount}," +
-            " free_do_balance= free_do_balance -  #{doAmount} " +
+//            " do_balance = do_balance + #{doAmount}," +
+//            " free_do_balance= free_do_balance -  #{doAmount} " +
             " where user_id =#{userId} ")
     int cancel(String userId,Integer cnyAmount,Integer doAmount);
 

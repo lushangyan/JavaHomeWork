@@ -20,6 +20,14 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.mytransaction</groupId>
+            <artifactId>com.mytransaction.api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+
         <!--spring boot的核心启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

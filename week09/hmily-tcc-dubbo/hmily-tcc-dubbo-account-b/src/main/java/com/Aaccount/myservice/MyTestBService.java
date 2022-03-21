@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.Baccount.service;
+package com.Aaccount.myservice;
 
 import org.dromara.hmily.annotation.Hmily;
 
@@ -23,7 +23,7 @@ import org.dromara.hmily.annotation.Hmily;
  *
  * @author xiaoyu
  */
-public interface MyAccountService {
+public interface MyTestBService {
     
     /**
      * 扣款支付

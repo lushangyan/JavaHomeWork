@@ -7,7 +7,7 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="bccount_service"/>
+    <dubbo:application name="my_account_service"/>
 
     <dubbo:registry protocol="zookeeper" address="localhost:2181"/>
 
@@ -16,7 +16,8 @@
                     charset="UTF-8" threadpool="fixed" threads="500"
                     queues="0" buffer="8192" accepts="0" payload="8388608" />
 
-    <dubbo:service interface="com.Baccount.service.MyAccountService"
-                  ref="myAccountService" executes="20"/>
+    <!--    这里提供一个账号金额操作基础服务，ref="accountService",注意和AccountServiceImpl的名称对应-->
+    <dubbo:service interface="com.Aaccount.myservice.MyTestBService"
+                   ref="myTestBService" executes="20"/>
 
 </beans>

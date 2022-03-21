@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.Baccount.service;
+package com.Aaccount.myservice;
 
-import com.Baccount.entity.AccountDTO;
-import com.Baccount.mapper.AccountMapper;
+import com.Aaccount.entity.AccountDTO;
+import com.Aaccount.mapper.AccountMapper;
 import org.dromara.hmily.annotation.HmilyTCC;
 import org.dromara.hmily.common.exception.HmilyRuntimeException;
 import org.slf4j.Logger;
@@ -33,11 +33,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author xiaoyu
  */
-@Service("myAccountService")
-public class MyAccountServiceImpl implements MyAccountService {
+@Service("myTestBService")
+public class MyTestBServiceImpl implements MyTestBService {
 
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MyAccountServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MyTestBServiceImpl.class);
 
     /**
      * The Confrim count.
@@ -48,7 +48,7 @@ public class MyAccountServiceImpl implements MyAccountService {
 
 
     @Autowired(required = false)
-    public MyAccountServiceImpl(final AccountMapper accountMapper ){
+    public MyTestBServiceImpl(final AccountMapper accountMapper ){
         this.accountMapper = accountMapper;
 
     }

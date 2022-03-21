@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.Baccount.entity;
+package com.Aaccount.entity;
 
 import lombok.Data;
 
