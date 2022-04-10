@@ -19,80 +19,15 @@ package com.redis.pubsub;
 
 import redis.clients.jedis.JedisPool;
 
-import java.util.Objects;
 
-/**
- * @author lw1243925457
- */
 public class Main {
 
-//    public static void main(String[] args) {
-//        JedisPool jedisPool = new JedisPool();
-//        String channelName = "ORDER";
-//
-//        SubscribeOrder subscribeOrder = new SubscribeOrder(jedisPool, channelName);
-//        PublishOrder publishOrder = new PublishOrder(jedisPool, channelName);
-//    }
-
-    public  int num;
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Main main = (Main) o;
-        return num == main.num;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(num);
-    }
-
     public static void main(String[] args) {
+        JedisPool jedisPool = new JedisPool();
+        String channelName = "ORDER";
 
-        Main main = new Main();
-        main.setNum(2);
-
-        System.out.println(main.equals(main));
-
-        Main main2 = new Main();
-        main2.setNum(2);
-        System.out.println(main.equals(main2));
-
-        System.out.println(main.hashCode());
-        System.out.println(main2.hashCode());
-
-
-//        System.out.println("数组长度不-1：{}" +  (16 & "郭德纲".hashCode()));
-//        System.out.println("数组长度不-1：{}" +  (16 & "彭于晏".hashCode()));
-//        System.out.println("数组长度不-1：{}" +  (16 & "李小龙".hashCode()));
-//        System.out.println("数组长度不-1：{}" +  (16 & "蔡徐鸡".hashCode()));
-//        System.out.println("数组长度不-1：{}" +  (16 & "唱跳rap篮球鸡叫".hashCode()));
-//
-//        System.out.println("数组长度-1但是不进行异或和>>>16运算：{}" + (15 & "郭德纲".hashCode()));
-//        System.out.println("数组长度-1但是不进行异或和>>>16运算：{}" + (15 & "彭于晏".hashCode()));
-//        System.out.println("数组长度-1但是不进行异或和>>>16运算：{}" + (15 & "李小龙".hashCode()));
-//        System.out.println("数组长度-1但是不进行异或和>>>16运算：{}" + (15 & "蔡徐鸡".hashCode()));
-//        System.out.println("数组长度-1但是不进行异或和>>>16运算：{}" + (15 & "唱跳rap篮球鸡叫".hashCode()));
-//
-//        System.out.println("数组长度-1并且进行异或和>>>16运算：{}" + (15 & ("郭德纲".hashCode()^("郭德纲".hashCode()>>>16))));
-//        System.out.println("数组长度-1并且进行异或和>>>16运算：{}" + (15 & ("彭于晏".hashCode()^("彭于晏".hashCode()>>>16))));
-//        System.out.println("数组长度-1并且进行异或和>>>16运算：{}" + (15 & ("李小龙".hashCode()^("李小龙".hashCode()>>>16))));
-//        System.out.println("数组长度-1并且进行异或和>>>16运算：{}" + (15 & ("蔡徐鸡".hashCode()^("蔡徐鸡".hashCode()>>>16))));
-//        System.out.println("数组长度-1并且进行异或和>>>16运算：{}" + (15 & ("唱跳rap篮球鸡叫".hashCode()^("唱跳rap篮球鸡叫".hashCode()>>>16))));
-//        System.out.println(Integer.toBinaryString("郭德纲".hashCode()));
-//        System.out.println(Integer.toBinaryString("彭于晏".hashCode()));
-//        System.out.println(Integer.toBinaryString("李小龙".hashCode()));
-//        System.out.println(Integer.toBinaryString("蔡徐鸡".hashCode()));
-
+        SubscribeOrder subscribeOrder = new SubscribeOrder(jedisPool, channelName);
+        PublishOrder publishOrder = new PublishOrder(jedisPool, channelName);
     }
+
 }
