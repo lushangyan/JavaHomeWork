@@ -5,23 +5,26 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.1</version>
+        <version>2.6.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example.jms.activemq</groupId>
-    <artifactId>jms-activemp</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>jms-activemq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jms-activemp</name>
-    <description>Demo project for Spring Boot</description>
-
+    <name>jms-activemq</name>
+    <description>jms-activemq</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.16.4</version>
         </dependency>
 
         <dependency>
@@ -33,11 +36,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
         </dependency>
     </dependencies>
 
