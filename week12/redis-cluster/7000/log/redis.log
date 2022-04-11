@@ -1,0 +1,44 @@
+19216:C 11 Apr 2022 20:33:57.640 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19216:C 11 Apr 2022 20:33:57.640 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19216, just started
+19216:C 11 Apr 2022 20:33:57.640 # Configuration loaded
+19216:M 11 Apr 2022 20:33:57.640 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19216:M 11 Apr 2022 20:33:57.640 * monotonic clock: POSIX clock_gettime
+19216:M 11 Apr 2022 20:33:57.640 * No cluster configuration found, I'm d8e98f494cc78c1a14cc1b8a628bc336252c2b73
+19216:M 11 Apr 2022 20:33:57.642 * Running mode=cluster, port=7000.
+19216:M 11 Apr 2022 20:33:57.642 # Server initialized
+19216:M 11 Apr 2022 20:33:57.642 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19216:M 11 Apr 2022 20:33:57.642 * Ready to accept connections
+19246:C 11 Apr 2022 20:37:24.604 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19246:C 11 Apr 2022 20:37:24.604 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19246, just started
+19246:C 11 Apr 2022 20:37:24.604 # Configuration loaded
+19246:M 11 Apr 2022 20:37:24.604 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19246:M 11 Apr 2022 20:37:24.604 * monotonic clock: POSIX clock_gettime
+19246:M 11 Apr 2022 20:37:24.604 # Warning: Could not create server TCP listening socket 127.0.0.1:7000: bind: Address already in use
+19246:M 11 Apr 2022 20:37:24.604 # Failed listening on port 7000 (TCP), aborting.
+19252:C 11 Apr 2022 20:37:56.415 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19252:C 11 Apr 2022 20:37:56.415 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19252, just started
+19252:C 11 Apr 2022 20:37:56.415 # Configuration loaded
+19252:M 11 Apr 2022 20:37:56.416 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19252:M 11 Apr 2022 20:37:56.416 * monotonic clock: POSIX clock_gettime
+19252:M 11 Apr 2022 20:37:56.416 # Warning: Could not create server TCP listening socket 127.0.0.1:7000: bind: Address already in use
+19252:M 11 Apr 2022 20:37:56.416 # Failed listening on port 7000 (TCP), aborting.
+19301:C 11 Apr 2022 20:41:36.129 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19301:C 11 Apr 2022 20:41:36.129 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19301, just started
+19301:C 11 Apr 2022 20:41:36.129 # Configuration loaded
+19301:M 11 Apr 2022 20:41:36.129 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19301:M 11 Apr 2022 20:41:36.129 * monotonic clock: POSIX clock_gettime
+19301:M 11 Apr 2022 20:41:36.129 * Node configuration loaded, I'm d8e98f494cc78c1a14cc1b8a628bc336252c2b73
+19301:M 11 Apr 2022 20:41:36.129 * Running mode=cluster, port=7000.
+19301:M 11 Apr 2022 20:41:36.129 # Server initialized
+19301:M 11 Apr 2022 20:41:36.129 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19301:M 11 Apr 2022 20:41:36.130 * Ready to accept connections
+19446:C 11 Apr 2022 20:51:06.077 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19446:C 11 Apr 2022 20:51:06.077 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19446, just started
+19446:C 11 Apr 2022 20:51:06.077 # Configuration loaded
+19446:M 11 Apr 2022 20:51:06.078 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19446:M 11 Apr 2022 20:51:06.078 * monotonic clock: POSIX clock_gettime
+19446:M 11 Apr 2022 20:51:06.078 * Node configuration loaded, I'm d8e98f494cc78c1a14cc1b8a628bc336252c2b73
+19446:M 11 Apr 2022 20:51:06.078 * Running mode=cluster, port=7000.
+19446:M 11 Apr 2022 20:51:06.078 # Server initialized
+19446:M 11 Apr 2022 20:51:06.078 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19446:M 11 Apr 2022 20:51:06.078 * Ready to accept connections

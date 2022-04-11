@@ -1,0 +1,30 @@
+19331:C 11 Apr 2022 20:42:18.471 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19331:C 11 Apr 2022 20:42:18.471 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19331, just started
+19331:C 11 Apr 2022 20:42:18.471 # Configuration loaded
+19331:M 11 Apr 2022 20:42:18.472 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19331:M 11 Apr 2022 20:42:18.472 * monotonic clock: POSIX clock_gettime
+19331:M 11 Apr 2022 20:42:18.472 * No cluster configuration found, I'm f2f3bfae8466873429cfb8ed68c51f4448e3017c
+19331:M 11 Apr 2022 20:42:18.473 * Running mode=cluster, port=7005.
+19331:M 11 Apr 2022 20:42:18.473 # Server initialized
+19331:M 11 Apr 2022 20:42:18.473 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19331:M 11 Apr 2022 20:42:18.474 * Ready to accept connections
+19356:C 11 Apr 2022 20:43:14.359 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19356:C 11 Apr 2022 20:43:14.359 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19356, just started
+19356:C 11 Apr 2022 20:43:14.359 # Configuration loaded
+19356:M 11 Apr 2022 20:43:14.359 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19356:M 11 Apr 2022 20:43:14.359 * monotonic clock: POSIX clock_gettime
+19356:M 11 Apr 2022 20:43:14.359 * No cluster configuration found, I'm 568f8218a36f99efca91cbd4bf8c7a234235108a
+19356:M 11 Apr 2022 20:43:14.361 * Running mode=cluster, port=7006.
+19356:M 11 Apr 2022 20:43:14.361 # Server initialized
+19356:M 11 Apr 2022 20:43:14.361 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19356:M 11 Apr 2022 20:43:14.362 * Ready to accept connections
+19482:C 11 Apr 2022 20:51:27.725 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19482:C 11 Apr 2022 20:51:27.725 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19482, just started
+19482:C 11 Apr 2022 20:51:27.725 # Configuration loaded
+19482:M 11 Apr 2022 20:51:27.726 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19482:M 11 Apr 2022 20:51:27.726 * monotonic clock: POSIX clock_gettime
+19482:M 11 Apr 2022 20:51:27.726 * Node configuration loaded, I'm 568f8218a36f99efca91cbd4bf8c7a234235108a
+19482:M 11 Apr 2022 20:51:27.726 * Running mode=cluster, port=7006.
+19482:M 11 Apr 2022 20:51:27.726 # Server initialized
+19482:M 11 Apr 2022 20:51:27.726 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19482:M 11 Apr 2022 20:51:27.726 * Ready to accept connections

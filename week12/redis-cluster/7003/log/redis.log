@@ -1,0 +1,20 @@
+19319:C 11 Apr 2022 20:42:11.840 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19319:C 11 Apr 2022 20:42:11.840 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19319, just started
+19319:C 11 Apr 2022 20:42:11.840 # Configuration loaded
+19319:M 11 Apr 2022 20:42:11.840 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19319:M 11 Apr 2022 20:42:11.840 * monotonic clock: POSIX clock_gettime
+19319:M 11 Apr 2022 20:42:11.841 * No cluster configuration found, I'm af74c0d5ccfdc6a4748eacfb4d5c82bd558f17f1
+19319:M 11 Apr 2022 20:42:11.842 * Running mode=cluster, port=7003.
+19319:M 11 Apr 2022 20:42:11.842 # Server initialized
+19319:M 11 Apr 2022 20:42:11.842 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19319:M 11 Apr 2022 20:42:11.843 * Ready to accept connections
+19464:C 11 Apr 2022 20:51:17.887 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19464:C 11 Apr 2022 20:51:17.887 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=19464, just started
+19464:C 11 Apr 2022 20:51:17.887 # Configuration loaded
+19464:M 11 Apr 2022 20:51:17.887 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19464:M 11 Apr 2022 20:51:17.888 * monotonic clock: POSIX clock_gettime
+19464:M 11 Apr 2022 20:51:17.888 * Node configuration loaded, I'm af74c0d5ccfdc6a4748eacfb4d5c82bd558f17f1
+19464:M 11 Apr 2022 20:51:17.888 * Running mode=cluster, port=7003.
+19464:M 11 Apr 2022 20:51:17.888 # Server initialized
+19464:M 11 Apr 2022 20:51:17.888 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+19464:M 11 Apr 2022 20:51:17.888 * Ready to accept connections
