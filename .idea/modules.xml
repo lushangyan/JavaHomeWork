@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/week09/hmily-tcc-dubbo/hmily-tcc-dubbo-transaction/com.transaction.iml" filepath="$PROJECT_DIR$/week09/hmily-tcc-dubbo/hmily-tcc-dubbo-transaction/com.transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/week02/homework02/homework02.iml" filepath="$PROJECT_DIR$/week02/homework02/homework02.iml" />
       <module fileurl="file://$PROJECT_DIR$/projiect/mq/jms-activemq/jms-activemq.iml" filepath="$PROJECT_DIR$/projiect/mq/jms-activemq/jms-activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projiect/mq/kafka-sample/kafka-sample.iml" filepath="$PROJECT_DIR$/projiect/mq/kafka-sample/kafka-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projiect/mq/mq.iml" filepath="$PROJECT_DIR$/projiect/mq/mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/week03/nio01/nio01.iml" filepath="$PROJECT_DIR$/week03/nio01/nio01.iml" />
       <module fileurl="file://$PROJECT_DIR$/week03/nio02/nio02.iml" filepath="$PROJECT_DIR$/week03/nio02/nio02.iml" />
       <module fileurl="file://$PROJECT_DIR$/projiect/redis/redis-lock/redis-lock.iml" filepath="$PROJECT_DIR$/projiect/redis/redis-lock/redis-lock.iml" />
