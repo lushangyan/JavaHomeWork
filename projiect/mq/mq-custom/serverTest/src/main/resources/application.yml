@@ -1,0 +1,9 @@
+
+Spring:
+  application:
+    name: serverTest
+
+server:
+  servlet:
+    context-path: /serverTest
+  port: 6789
